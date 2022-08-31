@@ -83,11 +83,20 @@ main .container .row1 .right .ratings:last-child {
 main .container .row2 {
   display: flex;
   gap: 30px;
+  min-height: 200px;
+  padding-bottom: 4rem;
 }
 main .container .row2 .reviews {
+  position: relative;
   background: var(--primary);
   padding: 2rem 1.9rem;
   border-radius: 10px;
+}
+main .container .row2 .reviews:nth-child(2) {
+  top: 2rem;
+}
+main .container .row2 .reviews:nth-child(3) {
+  top: 4rem;
 }
 main .container .row2 .reviews .profile {
   display: flex;

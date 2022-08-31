@@ -87,10 +87,19 @@ main{
         .row2{
             display:flex;
             gap:30px;
+            min-height: 200px;
+            padding-bottom: 4rem;
             .reviews{
+                position: relative;
                 background:var(--primary);
                 padding:2rem 1.9rem;
                 border-radius: 10px;
+                &:nth-child(2){
+                    top:2rem;
+                }
+                &:nth-child(3){
+                    top:4rem;
+                }
                 .profile{
                     display:flex;
                     align-items:center;
