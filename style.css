@@ -17,4 +17,99 @@
 main {
   min-height: 100vh;
   position: relative;
+}
+main .bg {
+  position: absolute;
+  z-index: -1;
+}
+main .bg-top {
+  top: 0;
+  left: 0;
+}
+main .bg-bottom {
+  bottom: 0;
+  right: 0;
+}
+main .container {
+  width: 100%;
+  height: 100%;
+  padding: 5rem 8rem;
+  z-index: 1;
+}
+main .container .row1 {
+  display: flex;
+  justify-content: space-between;
+  min-height: 400px;
+}
+main .container .row1 .left {
+  width: 50%;
+  max-height: 100%;
+}
+main .container .row1 .left h1 {
+  color: var(--primary);
+  font-size: 3.6rem;
+  width: 15ch;
+  line-height: 3rem;
+}
+main .container .row1 .left p {
+  margin-top: 2rem;
+  font-size: 1.2rem;
+  color: var(--d-g-magenta);
+  width: 40ch;
+}
+main .container .row1 .right {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+main .container .row1 .right .ratings {
+  background: var(--l-g-magenta);
+  padding: 1.2rem;
+  align-items: center;
+  gap: 30px;
+  width: 75%;
+  display: flex;
+  border-radius: 10px;
+}
+main .container .row1 .right .ratings:nth-child(2) {
+  position: relative;
+  left: 5rem;
+}
+main .container .row1 .right .ratings:last-child {
+  position: relative;
+  left: 10rem;
+}
+main .container .row2 {
+  display: flex;
+  gap: 30px;
+}
+main .container .row2 .reviews {
+  background: var(--primary);
+  padding: 2rem 1.9rem;
+  border-radius: 10px;
+}
+main .container .row2 .reviews .profile {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+main .container .row2 .reviews .profile img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+main .container .row2 .reviews .profile p {
+  color: var(--s-pink);
+}
+main .container .row2 .reviews .profile p span {
+  font-weight: 700;
+  color: #fff;
+}
+main .container .row2 .reviews .content {
+  margin-top: 1.6rem;
+  padding-bottom: 1rem;
+}
+main .container .row2 .reviews .content p {
+  color: #fff;
 }/*# sourceMappingURL=style.css.map */
