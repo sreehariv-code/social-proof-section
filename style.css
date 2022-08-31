@@ -1,9 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&display=swap");
 :root {
-  --primary:hsl(300, 43%, 22%);
-  --s-pink:hsl(333, 80%, 67%);
-  --d-g-magenta:hsl(303, 10%, 53%);
-  --l-g-magenta:hsl(300, 24%, 96%);
+  --primary: hsl(300, 43%, 22%);
+  --s-pink: hsl(333, 80%, 67%);
+  --d-g-magenta: hsl(303, 10%, 53%);
+  --l-g-magenta: hsl(300, 24%, 96%);
 }
 
 * {
@@ -29,6 +29,12 @@ main .bg-top {
 main .bg-bottom {
   bottom: 0;
   right: 0;
+}
+main .bg-top-mobile {
+  display: none;
+}
+main .bg-bottom-mobile {
+  display: none;
 }
 main .container {
   width: 100%;
@@ -65,6 +71,9 @@ main .container .row1 .right {
 }
 main .container .row1 .right .ratings {
   background: var(--l-g-magenta);
+  color: var(--primary);
+  font-weight: 700;
+  letter-spacing: 2px;
   padding: 1.2rem;
   align-items: center;
   gap: 30px;
@@ -121,4 +130,72 @@ main .container .row2 .reviews .content {
 }
 main .container .row2 .reviews .content p {
   color: #fff;
+}
+
+@media screen and (max-width: 991px) {
+  main .container {
+    padding: 3rem 5rem;
+  }
+  main .container .row1 .right {
+    align-items: end;
+  }
+  main .container .row1 .right .ratings:nth-child(2) {
+    position: relative;
+    left: 0rem;
+  }
+  main .container .row1 .right .ratings:last-child {
+    position: relative;
+    left: 0rem;
+  }
+}
+@media screen and (max-width: 840px) {
+  main .bg {
+    display: none;
+  }
+  main .bg-top-mobile {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  main .bg-bottom-mobile {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+  main .container {
+    padding: 2rem;
+  }
+  main .container .row1 {
+    padding-top: 2rem;
+    flex-direction: column;
+    align-items: center;
+  }
+  main .container .row1 .left {
+    width: 100%;
+  }
+  main .container .row1 .left h1 {
+    width: 100%;
+    text-align: center;
+  }
+  main .container .row1 .left p {
+    width: 100%;
+    text-align: center;
+  }
+  main .container .row1 .right {
+    width: 100%;
+    align-items: center;
+    margin-top: 2rem;
+  }
+  main .container .row1 .right .ratings {
+    min-width: 100%;
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+  }
+  main .container .row2 {
+    flex-direction: column;
+    padding-top: 4rem;
+  }
 }/*# sourceMappingURL=style.css.map */
